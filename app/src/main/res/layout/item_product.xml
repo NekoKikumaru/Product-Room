@@ -11,36 +11,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/txtName" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@id/txtID"
-        app:layout_constraintLeft_toRightOf="@id/txtID"
-        app:layout_constraintRight_toLeftOf="@id/txtPrice" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/txtPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
         android:textSize="18sp"
+        android:textAlignment="textEnd"
         app:layout_constraintBaseline_toBaselineOf="@id/txtID"
-        app:layout_constraintLeft_toRightOf="@id/txtName"
-        app:layout_constraintRight_toLeftOf="@id/txtQuantity" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/txtQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintBaseline_toBaselineOf="@id/txtID"
-        app:layout_constraintLeft_toRightOf="@id/txtPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
